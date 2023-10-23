@@ -1,0 +1,22 @@
+<!-- 1st example ngif -->
+<div *ngIf="show">
+  <p>This is Harsha</p>
+</div>
+<!-- 2nd example ngif -->
+<div *ngIf="show1; else dontshow"> This Ram</div>
+<ng-template #dontshow>
+<p>this is laxman</p>
+</ng-template>
+<!-- 3rd example ngswitch -->
+<div>
+<div [ngSwitch]="choose">
+<div *ngSwitchCase="'A'">Option A</div>
+<div *ngSwitchCase="'B'">Option B</div>
+</div>
+</div>
+<!-- 4th example ngFor -->
+<div>
+  <div *ngFor="let Details of Detail">
+    <h3>{{Details.name}}&nbsp;{{Details.behaviour}}</h3>
+  </div>
+</div>
